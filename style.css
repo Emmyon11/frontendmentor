@@ -1,0 +1,92 @@
+body{
+    background-color: hsl(234, 29%, 20%);
+    margin:0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: hsl(233, 57%, 15%);
+}
+/* ###############################desktop design ################### */
+.base-box{
+    background-color: white;
+    width: 61rem;
+    display: inline-block;
+    margin:15.625rem;
+    padding: 1rem;
+    border-radius: 15px;
+}
+
+.text-area{
+    display: inline-block;
+    padding:4rem;
+    line-height: 2;
+}
+
+.illustration{
+    float: right;
+}
+/*    email form   */
+.submit-button{
+    display: block;
+    margin-top: 2rem;
+    width: 22rem;
+    height: 2.5rem;
+    background-color:hsl(233, 57%, 15%) ;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.submit-button:hover{
+    background-image: linear-gradient(to right, rgb(233, 29, 121) , rgb(240, 85, 8));
+    cursor: pointer;
+}
+
+.input-area{
+    width: 22rem;
+    height: 2.3rem;
+    border: none;
+    border: solid 1px gray;
+    border-radius: 5px;
+}
+
+.input-area:hover{
+    cursor: pointer;
+}
+/* #####List Item ###### */
+.list li{
+    list-style: none;
+    list-style-image:url(images/icon-list.svg);
+}
+@media (max-width: 900px){
+    .base-box{ 
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    margin:0;
+    padding: 0;
+    height:100%;
+    border-radius: 0%;    
+    }
+    .text-area{
+       justify-content: center;
+       padding:0;
+       margin-top: 4rem; 
+    }
+
+    .illustration{
+        width: 100%;
+        margin: 0%;
+        padding: 0;
+    }
+    body{
+        background-color: none;
+        height: 100%;
+    }
+    .text-area{
+        padding: 1rem;
+    }
+
+    
+    
+}
